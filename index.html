@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header-controls">
+            <h1>Artistic Prompt Generator</h1>
+            <div class="theme-toggle">
+                <label for="darkModeToggle">Dark Mode</label>
+                <label class="switch">
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+        <div class="generator-form">
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" value="heavyweight thick bulky female bodybuilder with massive muscles">
+            </div>
+
+            <div class="form-group">
+                <label for="ethnicity">Ethnicity:</label>
+                <select id="ethnicity">
+                    <option value="Japanese">Japanese</option>
+                    <option value="Korean">Korean</option>
+                    <option value="Malaysian">Malaysian</option>
+                    <option value="Chinese">Chinese</option>
+                    <option value="Thai">Thai</option>
+                    <option value="Vietnamese">Vietnamese</option>
+                    <option value="Filipino">Filipino</option>
+                    <option value="Indonesian">Indonesian</option>
+                    <option value="Indian">Indian</option>
+                    <option value="Taiwanese">Taiwanese</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="expression">Facial Expression:</label>
+                <select id="expression">
+                    <option value="serious expression">Serious expression</option>
+                    <option value="confident expression">Confident expression</option>
+                    <option value="focused expression">Focused expression</option>
+                    <option value="determined expression">Determined expression</option>
+                    <option value="intense expression">Intense expression</option>
+                    <option value="stoic expression">Stoic expression</option>
+                    <option value="calm expression">Calm expression</option>
+                    <option value="neutral expression">Neutral expression</option>
+                    <option value="slight smile">Slight smile</option>
+                    <option value="contemplative expression">Contemplative expression</option>
+                    <option value="pensive expression">Pensive expression</option>
+                    <option value="thoughtful expression">Thoughtful expression</option>
+                    <option value="relaxed expression">Relaxed expression</option>
+                    <option value="proud expression">Proud expression</option>
+                    <option value="strong expression">Strong expression</option>
+                    <option value="fierce expression">Fierce expression</option>
+                    <option value="powerful expression">Powerful expression</option>
+                    <option value="concentrated expression">Concentrated expression</option>
+                    <option value="meditative expression">Meditative expression</option>
+                    <option value="composed expression">Composed expression</option>
+                    <option value="resolute expression">Resolute expression</option>
+                    <option value="tranquil expression">Tranquil expression</option>
+                    <option value="serene expression">Serene expression</option>
+                    <option value="dignified expression">Dignified expression</option>
+                    <option value="subtle expression">Subtle expression</option>
+                    <option value="distant gaze">Distant gaze</option>
+                    <option value="introspective look">Introspective look</option>
+                    <option value="focused on distance">Focused on distance</option>
+                    <option value="looking away">Looking away</option>
+                    <option value="looking at horizon">Looking at horizon</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="clothing">Clothing Options:</label>
+                <select id="clothing">
+                    <option value="fitted athletic tank top">Fitted athletic tank top</option>
+                    <option value="compression sportswear">Compression sportswear</option>
+                    <option value="workout crop top">Workout crop top</option>
+                    <option value="athletic shorts">Athletic shorts</option>
+                    <option value="fitness leggings">Fitness leggings</option>
+                    <option value="sports bra">Sports bra</option>
+                    <option value="training outfit">Training outfit</option>
+                    <option value="posing suit">Posing suit</option>
+                    <option value="competition bikini">Competition bikini</option>
+                    <option value="lifting belt">Lifting belt with sportswear</option>
+                    <option value="sleeveless hoodie">Sleeveless hoodie</option>
+                    <option value="muscle tee">Muscle tee</option>
+                    <option value="tight-fitting tank">Tight-fitting tank</option>
+                    <option value="performance shorts">Performance shorts</option>
+                    <option value="compression tights">Compression tights</option>
+                    <option value="athletic swimsuit">Athletic swimsuit</option>
+                    <option value="fitness jumpsuit">Fitness jumpsuit</option>
+                    <option value="mesh workout top">Mesh workout top</option>
+                    <option value="racerback sports bra">Racerback sports bra</option>
+                    <option value="high-waisted shorts">High-waisted shorts</option>
+                    <option value="crop fitness hoodie">Crop fitness hoodie</option>
+                    <option value="seamless workout set">Seamless workout set</option>
+                    <option value="athletic bodysuit">Athletic bodysuit</option>
+                    <option value="performance leggings">Performance leggings</option>
+                    <option value="moisture-wicking top">Moisture-wicking top</option>
+                    <option value="competition posing trunks">Competition posing trunks</option>
+                    <option value="athletic jacket">Athletic jacket</option>
+                    <option value="fitness vest">Fitness vest</option>
+                    <option value="spandex shorts">Spandex shorts</option>
+                    <option value="workout halter top">Workout halter top</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="scene">Scene Options (Outdoor Public Places):</label>
+                <select id="scene">
+                    <option value="public park">Public park</option>
+                    <option value="city street">City street</option>
+                    <option value="beach boardwalk">Beach boardwalk</option>
+                    <option value="urban plaza">Urban plaza</option>
+                    <option value="outdoor stairs">Outdoor stairs</option>
+                    <option value="public fountain">Public fountain</option>
+                    <option value="pedestrian bridge">Pedestrian bridge</option>
+                    <option value="outdoor amphitheater">Outdoor amphitheater</option>
+                    <option value="scenic overlook">Scenic overlook</option>
+                    <option value="public garden">Public garden</option>
+                    <option value="city skyline backdrop">City skyline backdrop</option>
+                    <option value="outdoor shopping district">Outdoor shopping district</option>
+                    <option value="harbor promenade">Harbor promenade</option>
+                    <option value="outdoor cafe setting">Outdoor cafe setting</option>
+                    <option value="public square">Public square</option>
+                    <option value="riverside walkway">Riverside walkway</option>
+                    <option value="outdoor sports complex">Outdoor sports complex</option>
+                    <option value="monument plaza">Monument plaza</option>
+                    <option value="botanical garden">Botanical garden</option>
+                    <option value="outdoor market">Outdoor market</option>
+                    <option value="beachfront">Beachfront</option>
+                    <option value="mountain viewpoint">Mountain viewpoint</option>
+                    <option value="urban rooftop">Urban rooftop</option>
+                    <option value="outdoor pool area">Outdoor pool area</option>
+                    <option value="public tennis court">Public tennis court</option>
+                    <option value="lakeside path">Lakeside path</option>
+                    <option value="outdoor art installation">Outdoor art installation</option>
+                    <option value="historic plaza">Historic plaza</option>
+                    <option value="outdoor train station">Outdoor train station</option>
+                    <option value="public waterfront">Public waterfront</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="timeOfDay">Time of Day:</label>
+                <select id="timeOfDay">
+                    <option value="">No specific time</option>
+                    <option value="sunrise">Sunrise</option>
+                    <option value="morning">Morning</option>
+                    <option value="midday">Midday</option>
+                    <option value="afternoon">Afternoon</option>
+                    <option value="sunset">Sunset (Golden Hour)</option>
+                    <option value="dusk">Dusk (Blue Hour)</option>
+                    <option value="evening">Evening</option>
+                    <option value="night">Night</option>
+                    <option value="midnight">Midnight</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="weather">Weather Conditions:</label>
+                <select id="weather">
+                    <option value="">No specific weather</option>
+                    <option value="clear sky">Clear sky</option>
+                    <option value="partly cloudy">Partly cloudy</option>
+                    <option value="cloudy">Cloudy</option>
+                    <option value="overcast">Overcast</option>
+                    <option value="foggy">Foggy</option>
+                    <option value="misty">Misty</option>
+                    <option value="light rain">Light rain</option>
+                    <option value="after rain">After rain</option>
+                    <option value="sunny">Sunny</option>
+                    <option value="snowy">Snowy</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="composition">Composition Type:</label>
+                <select id="composition">
+                    <option value="portrait shot">Portrait shot</option>
+                    <option value="full body shot">Full body shot</option>
+                    <option value="close-up">Close-up</option>
+                    <option value="medium shot">Medium shot</option>
+                    <option value="wide angle">Wide angle</option>
+                    <option value="low angle shot">Low angle shot</option>
+                    <option value="high angle shot">High angle shot</option>
+                    <option value="dutch angle">Dutch angle</option>
+                    <option value="over the shoulder">Over the shoulder</option>
+                    <option value="profile view">Profile view</option>
+                    <option value="three-quarter view">Three-quarter view</option>
+                    <option value="silhouette">Silhouette</option>
+                    <option value="backlit">Backlit</option>
+                    <option value="aerial view">Aerial view</option>
+                    <option value="eye-level shot">Eye-level shot</option>
+                    <option value="symmetrical composition">Symmetrical composition</option>
+                    <option value="rule of thirds">Rule of thirds</option>
+                    <option value="foreground framing">Foreground framing</option>
+                    <option value="leading lines">Leading lines</option>
+                    <option value="shallow depth of field">Shallow depth of field</option>
+                    <option value="deep focus">Deep focus</option>
+                    <option value="dramatic lighting">Dramatic lighting</option>
+                    <option value="golden hour lighting">Golden hour lighting</option>
+                    <option value="blue hour">Blue hour</option>
+                    <option value="contre-jour">Contre-jour</option>
+                    <option value="bokeh background">Bokeh background</option>
+                    <option value="panoramic view">Panoramic view</option>
+                    <option value="fisheye lens">Fisheye lens</option>
+                    <option value="telephoto compression">Telephoto compression</option>
+                    <option value="macro shot">Macro shot</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="pose">Pose Options:</label>
+                <select id="pose">
+                    <option value="front double biceps pose">Front double biceps pose</option>
+                    <option value="side chest pose">Side chest pose</option>
+                    <option value="back lat spread">Back lat spread</option>
+                    <option value="abdominal and thigh pose">Abdominal and thigh pose</option>
+                    <option value="side triceps pose">Side triceps pose</option>
+                    <option value="most muscular pose">Most muscular pose</option>
+                    <option value="vacuum pose">Vacuum pose</option>
+                    <option value="front lat spread">Front lat spread</option>
+                    <option value="rear double biceps">Rear double biceps</option>
+                    <option value="archer pose">Archer pose</option>
+                    <option value="hands on hips pose">Hands on hips pose</option>
+                    <option value="victory pose">Victory pose</option>
+                    <option value="hands behind head pose">Hands behind head pose</option>
+                    <option value="standing relaxed pose">Standing relaxed pose</option>
+                    <option value="crab most muscular">Crab most muscular</option>
+                    <option value="side serratus pose">Side serratus pose</option>
+                    <option value="three-quarter turn">Three-quarter turn</option>
+                    <option value="twisting back pose">Twisting back pose</option>
+                    <option value="single bicep curl">Single bicep curl</option>
+                    <option value="double bicep curl">Double bicep curl</option>
+                    <option value="overhead tricep extension">Overhead tricep extension</option>
+                    <option value="side oblique pose">Side oblique pose</option>
+                    <option value="kneeling pose">Kneeling pose</option>
+                    <option value="seated pose">Seated pose</option>
+                    <option value="standing quad flex">Standing quad flex</option>
+                    <option value="hamstring flex">Hamstring flex</option>
+                    <option value="calf raise pose">Calf raise pose</option>
+                    <option value="arms crossed pose">Arms crossed pose</option>
+                    <option value="v-taper emphasis">V-taper emphasis</option>
+                    <option value="classic symmetry pose">Classic symmetry pose</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="details">Additional Details:</label>
+                <textarea id="details" placeholder="Add details like jewelry, makeup, hair style, etc."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Style Enhancements:</label>
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="highQuality" checked>
+                        <label for="highQuality">High quality</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="detailed" checked>
+                        <label for="detailed">Detailed</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="softLighting">
+                        <label for="softLighting">Soft lighting</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="cinematic">
+                        <label for="cinematic">Cinematic</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="naturalLighting">
+                        <label for="naturalLighting">Natural lighting</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="photoRealistic" checked>
+                        <label for="photoRealistic">Photo-realistic</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="hyperDetailed">
+                        <label for="hyperDetailed">Hyper-detailed</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="ultraRealistic" checked>
+                        <label for="ultraRealistic">Ultra-realistic</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="negative">Negative Prompt:</label>
+                <textarea id="negative" readonly></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Auto-Added Elements:</label>
+                <div class="info-box">
+                    <p><strong>Skin Details:</strong> Smooth skin, flawless skin, porcelain skin, glowing skin, radiant skin, natural skin texture, etc.</p>
+                    <p><strong>Feminine Features:</strong> Feminine features, feminine face, soft facial features, delicate features, feminine curves, etc.</p>
+                    <p><strong>Photography Elements:</strong> Professional photography, DSLR, natural lighting, sharp focus, etc.</p>
+                    <p>These elements are randomly selected and added to each prompt to enhance realism.</p>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button id="randomBtn">Random Prompt</button>
+                <button id="generateBtn">Generate Prompt</button>
+            </div>
+
+            <div class="form-group result-area">
+                <label for="result">Generated Prompt:</label>
+                <textarea id="result" readonly></textarea>
+                <div class="copy-status">
+                    <span id="copyStatus">Auto-copied to clipboard</span>
+                    <button id="copyBtn">Copy to Clipboard</button>
+                </div>
+                <div class="favorites-controls">
+                    <input type="text" id="promptName" placeholder="Name this prompt">
+                    <button id="savePromptBtn">Save Prompt</button>
+                    <select id="savedPrompts">
+                        <option value="">-- Load Saved Prompt --</option>
+                    </select>
+                    <button id="deletePromptBtn">Delete Selected</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
