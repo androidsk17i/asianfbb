@@ -34,7 +34,7 @@
 - Expanded style enhancement options
 - Updated README with comprehensive documentation
 
-## Version 6.0 - Current Version
+## Version 6.0 - User Experience Improvements
 - Added user-editable subject field
 - Implemented save and load favorite prompts functionality
 - Added dark mode toggle with persistent preference
@@ -43,6 +43,12 @@
 - Added weather condition options
 - Improved responsive design
 - Enhanced CSS with CSS variables for theming
+
+## Version 7.0 - Current Version
+- Added animated typing footer with rotating phrases
+- Added copyright information (© 2025 androidsk17i)
+- Improved cursor animation for typing effect
+- Enhanced responsive design for footer elements
 
 ## Planned Future Enhancements
 - Export/import of prompt collections

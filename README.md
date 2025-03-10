@@ -41,6 +41,8 @@ A comprehensive web-based prompt generator designed specifically for the Realist
 - Manual copy button
 - Visual feedback for copy actions
 - Informative display of auto-added elements
+- Animated typing footer with helpful tips
+- Copyright information and branding
 
 ## How It Works
 
@@ -81,6 +83,7 @@ The generator combines user-selected options with automatically added elements t
 - CSS3 (with responsive design and dark mode)
 - JavaScript (vanilla, no frameworks)
 - LocalStorage for saving preferences and prompts
+- CSS animations for interactive elements
 
 ## Setup
 
@@ -96,4 +99,8 @@ This tool works with all modern browsers including:
 
 ## License
 
-This project is open source and available for personal and commercial use. 
+This project is open source and available for personal and commercial use.
+
+## Copyright
+
+© 2025 androidsk17i. All Rights Reserved. 

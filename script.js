@@ -29,6 +29,56 @@ document.addEventListener('DOMContentLoaded', function() {
     const savePromptBtn = document.getElementById('savePromptBtn');
     const savedPromptsSelect = document.getElementById('savedPrompts');
     const deletePromptBtn = document.getElementById('deletePromptBtn');
+    const typingTextElement = document.getElementById('typing-text');
+
+    // Animated typing effect for footer
+    function initTypingAnimation() {
+        const phrases = [
+            "Creating realistic prompts for your AI art...",
+            "Customize your prompts with just a few clicks...",
+            "Generate the perfect prompt for RealisticVisionV60B1...",
+            "Save your favorite prompts for later use...",
+            "Designed for creating stunning bodybuilder images..."
+        ];
+        
+        let currentPhraseIndex = 0;
+        let currentCharIndex = 0;
+        let isDeleting = false;
+        let typingSpeed = 100; // milliseconds per character
+        
+        function typeText() {
+            const currentPhrase = phrases[currentPhraseIndex];
+            
+            if (isDeleting) {
+                // Deleting text
+                typingTextElement.textContent = currentPhrase.substring(0, currentCharIndex - 1);
+                currentCharIndex--;
+                typingSpeed = 50; // faster when deleting
+            } else {
+                // Typing text
+                typingTextElement.textContent = currentPhrase.substring(0, currentCharIndex + 1);
+                currentCharIndex++;
+                typingSpeed = 100; // normal speed when typing
+            }
+            
+            // Check if we've completed typing the current phrase
+            if (!isDeleting && currentCharIndex === currentPhrase.length) {
+                // Pause at the end of typing
+                isDeleting = true;
+                typingSpeed = 1500; // wait before starting to delete
+            } else if (isDeleting && currentCharIndex === 0) {
+                // Move to next phrase after deleting
+                isDeleting = false;
+                currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
+                typingSpeed = 500; // pause before starting new phrase
+            }
+            
+            setTimeout(typeText, typingSpeed);
+        }
+        
+        // Start the typing animation
+        typeText();
+    }
 
     // Dark mode functionality
     function initDarkMode() {
@@ -560,6 +610,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize features
     initDarkMode();
     initFavorites();
+    initTypingAnimation();
 
     // Event listeners
     generateBtn.addEventListener('click', generatePrompt);
